@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portifolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="js.js">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    spacing: {
+                        100: "25rem",
+                        12: "30rem",
+                        13: "33rem",
+                        96: "38rem",
+                    },
+                    colors: {
+                        clifford: "#da373d",
+                        purple1: "#DC84F3",
+                        purple2: "#E9A8F2",
+                        purple3: "#F3CCF3",
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Paulin.</a>
+        <nav class="navbar">
+            <a href="#" class="active">Home </a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Portifolio</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h1>Hi, I'm Niyobyose Paulin</h1>
+            <h3>FullStack Developer</h3>
+            <p>
+                i have different skills in different programming
+                Languages such as Javascript, Python, php,etc get to know me 
+                through my personal portifolio.
+            </p>
+            <div class="btn-box ">
+                <a href="#">Hire Me</a>
+                <a href="#">Let's Talk</a>
+            </div>
+        </div>
+        <div class="home-sci">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+        </div>
+        <div class="ml-20"><img src="me.png" alt=""></div>
+    </section>
+    
+</body>
+</html>
