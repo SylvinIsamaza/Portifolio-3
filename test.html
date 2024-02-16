@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animated Button Background on Hover (Tailwind CSS)</title>
+<!-- Include Tailwind CSS -->
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<style>
+  /* Custom animation styles */
+  .animated-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00ff00;
+    transition: width 0.3s ease;
+  }
+  /* Hover effect */
+  .animated-button:hover::before {
+    width: 100%;
+  }
+</style>
+</head>
+<body>
+
+<!-- Button with Tailwind CSS and animation -->
+<button class="relative inline-block px-4 py-2 bg-blue-500 text-white font-semibold rounded-md overflow-hidden animated-button">Hover Me</button>
+
+</body>
+</html>

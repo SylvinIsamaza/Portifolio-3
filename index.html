@@ -1,66 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portifolio Website</title>
+    <title>Paulin's Portifolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="js.js">
+    <link rel="stylesheet" href="script.js">
+    <link rel="icon" href="">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     spacing: {
-                        100: "25rem",
+                        100: "22rem",
                         12: "30rem",
-                        13: "33rem",
-                        96: "38rem",
+                        13: "35rem",
+                        96: "40rem",
                     },
                     colors: {
                         clifford: "#da373d",
                         purple1: "#DC84F3",
                         purple2: "#E9A8F2",
                         purple3: "#F3CCF3",
+                        black: "#2f2f2f"
                     },
                 },
             },
         };
     </script>
 </head>
-<body>
-    <header class="header">
-        <a href="#" class="logo">Paulin.</a>
-        <nav class="navbar">
-            <a href="#" class="active">Home </a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Portifolio</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
-    <section class="home">
-        <div class="home-content">
-            <h1>Hi, I'm Niyobyose Paulin</h1>
-            <h3>FullStack Developer</h3>
-            <p>
-                i have different skills in different programming
-                Languages such as Javascript, Python, php,etc get to know me 
-                through my personal portifolio.
-            </p>
-            <div class="btn-box ">
-                <a href="#">Hire Me</a>
-                <a href="#">Let's Talk</a>
+
+<body class="">
+    <!-- First page  -->
+    <div class="bg-black text-white p-5">
+
+        <!-- navigation bar -->
+        <nav>
+            <div class=" flex">
+                <div class="ml-10">PAULIN</div>
+                <!-- desktop view -->
+                <div>
+                    <ul class=" hidden lg:flex flex-row gap-10 font-serif text-xl ml-13">
+                        <a href="#" class="text-pink-500  hover:text-pink-500 duration-500">Home</a>
+                        <a href="#" class="text-pink-100 hover:text-pink-500 duration-500">About me </a>
+                        <a href="#" class="text-pink-100 hover:text-pink-500 duration-500">Skills</a>
+                        <a href="#" class="text-pink-100 hover:text-pink-500 duration-500">Experience</a>
+                        <a href="#" class="text-pink-100 hover:text-pink-500 duration-500">Contacts</a>
+                    </ul>
+                </div>
+
+                <!-- mobile view -->
+                <div class=" lg:hidden  flex flex-col ml-100 ml-10">
+                   <div> <i class='bx bx-menu' ></i></div>
+                   <div>
+                    <ul class="flex flex-col">
+                        <a href="#" class="text-pink-500  hover:text-pink-500 duration-500">Home</a>
+                        <a href="#" class="text-pink-100 hover:text-pink-500 duration-500">About me </a>
+                        <a href="#" class="text-pink-100 hover:text-pink-500 duration-500">Skills</a>
+                        <a href="#" class="text-pink-100 hover:text-pink-500 duration-500">Experience</a>
+                        <a href="#" class="text-pink-100 hover:text-pink-500 duration-500">Contacts</a>
+                    </ul>
+                   </div>
+
+
+
+                </div>
             </div>
-        </div>
-        <div class="home-sci">
-            <a href="#"><i class='bx bxl-facebook'></i></a>
-            <a href="#"><i class='bx bxl-twitter'></i></a>
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
-        </div>
-        <div class="ml-20"><img src="me.png" alt=""></div>
-    </section>
-    
+
+
+        </nav>
+        <!-- land on -->
+
+        <section class="bg-black">
+            <div class=" bg-black mr-100 h-13 pt-32 gap-10">
+                <h3 class="text-7xl ml-7">
+                    <p id="paragraph" class="text-pink-500"></p><br> 
+                    <script src="script.js"></script>
+                    Full Stack developer
+                </h3>
+                <p class="ml-7  mt-5 text-pink-200 text-xl">My name is NIYOBYOSE Paulin . <br>
+                 I am a rising programmer, passionate about <br> 
+                 solving different issues about this field </p>
+                <div class="ml-40 mt-16" >
+                    <button class="h-10 w-32  bg-pink-500 rounded hover:bg-black duration-700 ease-in-out border-2 border-pink-500">Hire me </button>
+                    <button class="h-10 w-32 ml-10 rounded border-2 text-pink-300 font-semibold border-pink-500 hover:bg-pink-500 hover:text-white duration-700 ease-in-out">Let's Talk</button>
+                </div>
+            </div>
+
+        </section>
+    </div>
 </body>
+
 </html>
