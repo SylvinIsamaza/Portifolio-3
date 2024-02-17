@@ -31,4 +31,15 @@ document.addEventListener('DOMContentLoaded', function () {
     type();
   });
 
+  const menu = document.getElementById('menu');
+menu.addEventListener('click',function(){
+    const hiddenContent = document.getElementById('hiddenContent');
+    if(hiddenContent.classList.contains('hidden')){
+        hiddenContent.classList.remove('hidden');
+    } else{
+        hiddenContent.classList.add('hidden')
+    }
+
+});
+
  
