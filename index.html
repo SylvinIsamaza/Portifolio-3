@@ -17,6 +17,7 @@
                 extend: {
                     spacing: {
                         100: "22rem",
+                        11: "25rem",
                         12: "30rem",
                         13: "35rem",
                         96: "40rem",
@@ -36,7 +37,7 @@
 
 <body class="">
     <!-- First page  -->
-    <div class="bg-black text-white p-5">
+    <div style="background-image: url(images/🔥\ SVG\ Background.jpeg); background-repeat: no-repeat; background-size: cover;" class=" text-white p-5">
 
         <!-- navigation bar -->
         <nav>
@@ -55,19 +56,16 @@
 
                 <!-- mobile view -->
                 <div class=" lg:hidden  flex flex-col ml-100 ml-10">
-                   <div> <i class='bx bx-menu' ></i></div>
-                   <div>
-                    <ul class="flex flex-col">
-                        <a href="#" class="text-pink-500  hover:text-pink-500 duration-500">Home</a>
-                        <a href="#" class="text-pink-100 hover:text-pink-500 duration-500">About me </a>
-                        <a href="#" class="text-pink-100 hover:text-pink-500 duration-500">Skills</a>
-                        <a href="#" class="text-pink-100 hover:text-pink-500 duration-500">Experience</a>
-                        <a href="#" class="text-pink-100 hover:text-pink-500 duration-500">Contacts</a>
-                    </ul>
-                   </div>
-
-
-
+                    <div> <i class='bx bx-menu' id="menu"></i></div>
+                    <div>
+                        <ul class="flex flex-col hidden" id="hiddenContent">
+                            <a href="#" class="text-pink-500  hover:text-pink-500 duration-500">Home</a>
+                            <a href="#" class="text-pink-100 hover:text-pink-500 duration-500">About me </a>
+                            <a href="#" class="text-pink-100 hover:text-pink-500 duration-500">Skills</a>
+                            <a href="#" class="text-pink-100 hover:text-pink-500 duration-500">Experience</a>
+                            <a href="#" class="text-pink-100 hover:text-pink-500 duration-500">Contacts</a>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -75,21 +73,48 @@
         </nav>
         <!-- land on -->
 
-        <section class="bg-black">
-            <div class=" bg-black mr-100 h-13 pt-32 gap-10">
-                <h3 class="text-7xl ml-7">
-                    <p id="paragraph" class="text-pink-500"></p><br> 
-                    <script src="script.js"></script>
-                    Full Stack developer
+        <section class="">
+            <div class="mr-100 h-13 pt-32 gap-10">
+                <h3 class="text-7xl ml-7 text-pink-500 ">
+                    <p id="paragraph" ></p><br>
+                    <script src="script.js" ></script>
+                   <p class="ml-14"> Full Stack developer</p>
                 </h3>
-                <p class="ml-7  mt-5 text-pink-200 text-xl">My name is NIYOBYOSE Paulin . <br>
-                 I am a rising programmer, passionate about <br> 
-                 solving different issues about this field </p>
-                <div class="ml-40 mt-16" >
-                    <button class="h-10 w-32  bg-pink-500 rounded hover:bg-black duration-700 ease-in-out border-2 border-pink-500">Hire me </button>
-                    <button class="h-10 w-32 ml-10 rounded border-2 text-pink-300 font-semibold border-pink-500 hover:bg-pink-500 hover:text-white duration-700 ease-in-out">Let's Talk</button>
+                <p class="ml-7  text-purple-500 text-xl mt-36">My name is NIYOBYOSE Paulin . <br>
+                    I am a rising programmer, passionate about <br>
+                    solving different issues about this field </p>
+                <div class="ml-40 mt-16">
+                    <button
+                        class="h-10 w-32 text-white  bg-pink-500 rounded hover:bg-slate-100 hover:border-purple-500 hover:text-purple-500  duration-700 ease-in-out border-2 border-pink-500">Hire
+                        me </button>
+                    <button
+                        class="h-10 w-32 ml-10 rounded border-2 text-purple-500 font-semibold border-purple-500 hover:bg-purple-500 hover:text-white duration-700 ease-in-out">Let's
+                        Talk</button>
                 </div>
             </div>
+
+        </section>
+
+    </div>
+
+    <div>
+        <section class="mt-40">
+            <div>
+                <h3 class="">Skill-set</h3>
+                <div class=" p-5 gap-10 h-13  ">
+                    <div class="">
+                        <div class="gap-10 flex items-center justify-center mt-10">
+                            <div style="background-image: url(images/cards.jpeg); background-repeat: no-repeat; background-size: cover;" class=" h-52 w-64 bg-pink-200"></div>
+                            <div style="background-image: url(images/cards.jpeg); background-repeat: no-repeat; background-size: cover;" class=" h-52 w-64"></div>
+                            <div style="background-image: url(images/cards.jpeg); background-repeat: no-repeat; background-size: cover;" class=" h-52 w-64"></div>
+                        </div>
+                        <div class="gap-10 flex items-center justify-center mt-10">
+                            <div style="background-image: url(images/cards.jpeg); background-repeat: no-repeat; background-size: cover;" class=" h-52 w-64"></div>
+                            <div style="background-image: url(images/cards.jpeg); background-repeat: no-repeat; background-size: cover;" class="h-52 w-64"></div>
+                            <div style="background-image: url(images/cards.jpeg); background-repeat: no-repeat; background-size: cover;" class=" h-52 w-64"></div>
+                        </div>
+                    </div>
+                </div>
 
         </section>
     </div>
